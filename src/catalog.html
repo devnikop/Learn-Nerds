@@ -23,53 +23,114 @@
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
       <section class="form">
-        <h2 class="visually-hidden">Форма</h2>
-        <!-- Here will be form -->
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <div class="range">
+              <div>
+                <button class="range__left"></button>
+                <button class="range__right"></button>
+              </div>
+            </div>
+            <label>
+              От
+              <input name="cost-min" value="0" />
+            </label>
+            <label>
+              До
+              <input name="cost-max" value="15000" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <label>
+              <input type="radio" name="grid" />
+              Адаптивная
+            </label>
+            <label>
+              <input type="radio" name="grid" />
+              Фиксированная
+            </label>
+            <label>
+              <input type="radio" name="grid" />
+              Резиновая
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <label>
+              <input type="checkbox" name="features-slider" checked />
+              Слайдер
+            </label>
+            <label>
+              <input type="checkbox" name="features-benefits" />
+              Блок преимуществ
+            </label>
+            <label>
+              <input type="checkbox" name="features-news" checked />
+              Новости
+            </label>
+            <label>
+              <input type="checkbox" name="features-gallery" />
+              Галерея
+            </label>
+            <label>
+              <input type="checkbox" name="features-basket" />
+              Корзина
+            </label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
         <p>Сортировать:</p>
         <ul class="sort__list">
-          <li class="sort__item">По цене</li>
-          <li class="sort__item">По типу</li>
-          <li class="sort__item">По названию</li>
+          <li class="sort__item"><button>По цене</button></li>
+          <li class="sort__item"><button>По типу</button></li>
+          <li class="sort__item"><button>По названию</button></li>
+        </ul>
+        <ul class="sort__type">
+          <li><button></button></li>
+          <li><button></button></li>
         </ul>
       </section>
       <section class="templates">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <ul class="templates__list">
           <li class="templates__item">
-            <h3>Sedona</h3>
+            <h3 class="visually-hidden">Sedona</h3>
             <img src="../img/img-sedona.jpg" alt="Sedona" />
             <p>Информационный сайт для туристов</p>
             <button>9 900 руб.</button>
           </li>
           <li class="templates__item">
-            <h3>Pink App</h3>
+            <h3 class="visually-hidden">Pink App</h3>
             <img src="../img/img-pink.jpg" alt="Pink" />
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <button>9 900 руб.</button>
           </li>
           <li class="templates__item">
-            <h3>Barbershop</h3>
+            <h3 class="visually-hidden">Barbershop</h3>
             <img src="../img/img-barbershop.jpg" alt="Barbershop" />
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <button>9 900 руб.</button>
           </li>
           <li class="templates__item">
-            <h3>Mishka</h3>
+            <h3 class="visually-hidden">Mishka</h3>
             <img src="../img/img-mishka.jpg" alt="Mishka" />
             <p>Интернет-магазин вязаных игрушек</p>
             <button>9 900 руб.</button>
           </li>
           <li class="templates__item">
-            <h3>A Plus</h3>
+            <h3 class="visually-hidden">A Plus</h3>
             <img src="../img/img-aplus.jpg" alt="A plus" />
             <p>Лендинг курсов повышения квалификации</p>
             <button>9 900 руб.</button>
           </li>
           <li class="templates__item">
-            <h3>Кваст</h3>
+            <h3 class="visually-hidden">Кваст</h3>
             <img src="../img/img-kvast.jpg" alt="Kvast" />
             <p>Промо-сайт производителя крафтового кваса</p>
             <button>9 900 руб.</button>
@@ -77,12 +138,13 @@
         </ul>
       </section>
       <section class="pagination">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Постраничная навигация</h2>
         <ul class="pagination__list">
-          <li class="pagination__item">1</li>
-          <li class="pagination__item">2</li>
-          <li class="pagination__item">3</li>
-          <li class="pagination__item">Следующая</li>
+          <li class="pagination__item"><button>Предыдущая</button></li>
+          <li class="pagination__item"><button>1</button></li>
+          <li class="pagination__item"><button>2</button></li>
+          <li class="pagination__item"><button>3</button></li>
+          <li class="pagination__item"><button>Следующая</button></li>
         </ul>
       </section>
     </main>
@@ -120,8 +182,22 @@
     </footer>
     <section class="modal modal--feedback">
       <h2>Напишите нам</h2>
-      <!-- Here will be form -->
-      <button>Отправить</button>
+      <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия" />
+        </label>
+        <label>
+          Ваше email:
+          <input type="email" name="email" placeholder="email@example.com" />
+        </label>
+        <label>
+          Текст письма:
+          <textarea name="description" placeholder="В свободной форме"></textarea>
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть окно</button>
     </section>
   </body>
 </html>
