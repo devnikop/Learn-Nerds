@@ -22,7 +22,7 @@
       </nav>
     </header>
     <main>
-      <h1>Студия разработки Nerds</h1>
+      <h1 class="visually-hidden">Студия разработки Nerds</h1>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul>
@@ -137,8 +137,22 @@
     </footer>
     <section class="modal modal--feedback">
       <h2>Напишите нам</h2>
-      <!-- Here will be form -->
-      <button>Отправить</button>
+      <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия" />
+        </label>
+        <label>
+          Ваше email:
+          <input type="email" name="email" placeholder="email@example.com" />
+        </label>
+        <label>
+          Текст письма:
+          <textarea name="description" placeholder="В свободной форме"></textarea>
+        </label>
+        <button>Отправить</button>
+      </form>
+      <button>Закрыть окно</button>
     </section>
   </body>
 </html>
