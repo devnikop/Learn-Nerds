@@ -24,12 +24,15 @@
 
 :root {
   --color-text: #000000;
+  --color-text-white: #ffffff;
+  --color-background: #eeeeee;
 
   --font-regular: 400;
   --font-medium: 500;
   --font-bold: 700;
 
   --font-size-main: 16px;
+  --line-height-main: 24px;
 
   --font-family-main: 'Roboto', 'Arial', 'sans-serif';
 }
@@ -51,14 +54,20 @@
 }
 
 body {
-  color: var(--color-text);
   font-size: var(--font-size-main);
+  line-height: var(--line-height-main);
   font-family: var(--font-family-main);
   font-weight: var(--font-regular);
+  color: var(--color-text);
 }
 
 a {
   text-decoration: none;
+}
+
+.header {
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 .navigation__link {
@@ -66,4 +75,27 @@ a {
   font-weight: var(--font-medium);
   text-transform: uppercase;
   color: var(--color-text);
+}
+
+.slider {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.slider__slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: var(--font-medium);
+}
+
+.slider__text {
+  color: #283136;
+}
+
+.slider__link {
+  font-size: var(--font-size-main);
+  line-height: 18px;
+  font-weight: var(--font-medium);
+  color: var(--color-text-white);
+  background-color: #fb565a;
 }
