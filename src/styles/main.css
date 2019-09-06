@@ -65,6 +65,14 @@ a {
   text-decoration: none;
 }
 
+.button-like {
+  font-size: var(--font-size-main);
+  line-height: 18px;
+  font-weight: var(--font-medium);
+  color: var(--color-text-white);
+  background-color: #fb565a;
+}
+
 .header {
   color: var(--color-text);
   background-color: var(--color-background);
@@ -92,10 +100,21 @@ a {
   color: #283136;
 }
 
-.slider__link {
-  font-size: var(--font-size-main);
-  line-height: 18px;
-  font-weight: var(--font-medium);
-  color: var(--color-text-white);
-  background-color: #fb565a;
+.slider__link {}
+
+.features__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+}
+
+.features__link {}
+
+.features__link--green {
+  background-color: #00ca74;
+}
+
+.features__link--yellow {
+  background-color: #efc84a;
 }
