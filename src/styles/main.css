@@ -148,3 +148,31 @@ a {
   font-size: 45px;
   font-weight: var(--font-bold);
 }
+
+.map {
+  color: #666666;
+  line-height: 18px;
+}
+
+.map__title {
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map__phone-link {
+  color: inherit;
+}
+
+.footer__slogan {
+  font-size: 36px;
+  font-weight: var(--font-bold);
+  line-height: 36px;
+}
+
+.footer__text {
+  color: #444444;
+  line-height: 22px;
+}
