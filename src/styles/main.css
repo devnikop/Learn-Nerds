@@ -118,3 +118,33 @@ a {
 .features__link--yellow {
   background-color: #efc84a;
 }
+
+.info__slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: var(--font-medium);
+}
+
+.info__list-title {
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+}
+
+.info__table-title {
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+}
+
+.table__cell {
+
+}
+
+.table__cell--header {
+  line-height: 18px;
+  font-weight: var(--font-regular);
+}
+
+.table__cell--data {
+  font-size: 45px;
+  font-weight: var(--font-bold);
+}
