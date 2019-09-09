@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Catalog</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
@@ -11,12 +13,12 @@
         <img class="header__logo" src="../img/nerds-logo.svg" alt="Main logotype" />
       </a>
       <nav>
-        <ul class="header__navigation site-navigation">
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-          <li><a href="">Корзина</a></li>
+        <ul class="header__navigation navigation">
+          <li><a class="navigation__link" href="">Студия</a></li>
+          <li><a class="navigation__link" href="">Клиенты</a></li>
+          <li><a class="navigation__link" href="">Магазин</a></li>
+          <li><a class="navigation__link" href="">Контакты</a></li>
+          <li><a class="navigation__link" href="">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -148,56 +150,68 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <div class="map">
-        <div class="map__address">
-          <p>NЁRDS DESIGN STUDIO</p>
-          <p>
+    <footer class="footer">
+      <div class="footer__map map">
+        <div class="map__wrapper">
+          <p class="map__title">NЁRDS DESIGN STUDIO</p>
+          <p class="map__address">
             191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-          <p>
+          <p class="map__phone">
             тел.
-            <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
+            <a class="map__phone-link" href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
           </p>
-          <a>Напишите нам</a>
+          <a class="button-like">Напишите нам</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <ul class="social-buttons">
-          <li>
-            <a>VKontakte </a>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a>
+              <span class="visually-hidden">VKontakte</span>
+            </a>
           </li>
-          <li>
-            <a>Facebook</a>
+          <li class="socials__item">
+            <a>
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
-          <li>
-            <a>Instagram</a>
+          <li class="socials__item">
+            <a>
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
         </ul>
         <div>
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <b class="footer__slogan">Давайте дружить, это выгодно!</b>
+          <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
     <section class="modal modal--feedback">
-      <h2>Напишите нам</h2>
-      <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-        <label>
+      <h2 class="modal__title">Напишите нам</h2>
+      <form class="modal__form form" method="POST" action="https://echo.htmlacademy.ru">
+        <label class="form__label">
           Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия" />
+          <input class="form__input" type="text" name="name" placeholder="Имя Фамилия" />
         </label>
-        <label>
+        <label class="form__label">
           Ваше email:
-          <input type="email" name="email" placeholder="email@example.com" />
+          <input class="form__input" type="email" name="email" placeholder="email@example.com" />
         </label>
-        <label>
+        <label class="form__label">
           Текст письма:
-          <textarea name="description" placeholder="В свободной форме"></textarea>
+          <textarea
+            class="form__input form__input--textarea"
+            name="description"
+            placeholder="В свободной форме"
+          ></textarea>
         </label>
-        <button type="submit">Отправить</button>
+        <button class="form__submit button-like" type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть окно</button>
+      <button type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
     </section>
   </body>
 </html>
