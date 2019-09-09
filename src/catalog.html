@@ -46,56 +46,50 @@
           </fieldset>
           <fieldset>
             <legend class="filter__legend">Сетка:</legend>
-            <label class="filter__label">
-              <input type="radio" name="grid" />
-              Адаптивная
-            </label>
-            <label class="filter__label">
-              <input type="radio" name="grid" />
-              Фиксированная
-            </label>
-            <label class="filter__label">
-              <input type="radio" name="grid" />
-              Резиновая
-            </label>
+            <input class="filter__input" id="radio-adaptive" type="radio" name="grid" checked />
+            <label class="filter__label filter__label--radio" for="radio-adaptive">Адаптивная</label>
+            <input class="filter__input" id="radio-fix" type="radio" name="grid" />
+            <label class="filter__label filter__label-radio" for="radio-fix">Фиксированная</label>
+            <input class="filter__input" id="radio-rubber" type="radio" name="grid" />
+            <label class="filter__label filter__label--radio" for="radio-rubber">Резиновая</label>
           </fieldset>
           <fieldset>
             <legend class="filter__legend">Особенности:</legend>
-            <label class="filter__label">
-              <input type="checkbox" name="features-slider" checked />
-              Слайдер
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features-benefits" />
-              Блок преимуществ
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features-news" checked />
-              Новости
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features-gallery" />
-              Галерея
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features-basket" />
-              Корзина
-            </label>
+            <input class="filter__input" id="features-slider-id" type="checkbox" name="features-slider" checked />
+            <label class="filter__label" for="features-slider-id">Слайдер</label>
+            <input class="filter__input" id="features-benefits-id" type="checkbox" name="features-benefits" />
+            <label class="filter__label" for="features-benefits-id">Блок преимуществ</label>
+            <input class="filter__input" id="features-news-id" type="checkbox" name="features-news" checked />
+            <label class="filter__label" for="features-news-id">Новости</label>
+            <input class="filter__input" id="features-gallery-id" type="checkbox" name="features-gallery" />
+            <label class="filter__label" for="features-gallery-id">Галерея</label>
+            <input class="filter__input" id="features-basket-id" type="checkbox" name="features-basket" />
+            <label class="filter__label" for="features-basket-id">Корзина</label>
           </fieldset>
           <button class="button-like button-like--grey" type="submit">Показать</button>
         </form>
       </section>
       <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
-        <p>Сортировать:</p>
+        <p class="sort__text">Сортировать:</p>
         <ul class="sort__list">
-          <li class="sort__item"><a>По цене</a></li>
-          <li class="sort__item"><a href="">По типу</a></li>
-          <li class="sort__item"><a href="">По названию</a></li>
+          <li class="sort__item sort__item--current">
+            <a class="sort__link">По цене</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link" href="">По типу</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link" href="">По названию</a>
+          </li>
         </ul>
-        <ul class="sort__type">
-          <li><a></a></li>
-          <li><a href=""></a></li>
+        <ul class="sort__list">
+          <li class="sort__item sort__item--current">
+            <a></a>
+          </li>
+          <li class="sort__item">
+            <a href=""></a>
+          </li>
         </ul>
       </section>
       <section class="templates">

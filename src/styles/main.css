@@ -311,7 +311,6 @@ a {
   font-weight: var(--font-bold);
   line-height: 30px;
   text-transform: uppercase;
-  letter-spacing: 0.05px;
 }
 
 .range {
@@ -338,4 +337,47 @@ a {
 .filter__label {
   color: #283136;
   line-height: 20px;
+}
+
+.filter__input:disabled + .filter__label {
+  opacity: 0.3;
+}
+
+.filter__label--radio:hover {
+  color: var(--color-text);
+}
+
+.sort {
+
+}
+
+.sort__text {
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort__item {
+  opacity: 0.3;
+}
+
+.sort__item--current {
+  opacity: 1;
+}
+
+.sort__item:hover,
+.sort__item:focus {
+  opacity: 0.6;
+}
+
+.sort__item:active {
+  opacity: 1;
+}
+
+.sort__link {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
