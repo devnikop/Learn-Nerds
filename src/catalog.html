@@ -22,67 +22,67 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
-      <section class="form">
+    <main class="main">
+      <h1 class="main__title">Магазин готовых шаблонов</h1>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <form method="POST" action="https://echo.htmlacademy.ru">
+        <form class="filter__form" method="POST" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Стоимость:</legend>
-            <div class="range">
-              <div>
+            <legend class="filter__legend">Стоимость:</legend>
+            <div class="filter__range range">
+              <div class="range__line">
                 <button class="range__left"></button>
                 <button class="range__right"></button>
               </div>
             </div>
-            <label>
+            <label class="filter__range-label">
               От
-              <input name="cost-min" value="0" />
+              <input class="filter__range-input" name="cost-min" value="0" />
             </label>
-            <label>
+            <label class="filter__range-label">
               До
-              <input name="cost-max" value="15000" />
+              <input class="filter__range-input" name="cost-max" value="15000" />
             </label>
           </fieldset>
           <fieldset>
-            <legend>Сетка:</legend>
-            <label>
+            <legend class="filter__legend">Сетка:</legend>
+            <label class="filter__label">
               <input type="radio" name="grid" />
               Адаптивная
             </label>
-            <label>
+            <label class="filter__label">
               <input type="radio" name="grid" />
               Фиксированная
             </label>
-            <label>
+            <label class="filter__label">
               <input type="radio" name="grid" />
               Резиновая
             </label>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
-            <label>
+            <legend class="filter__legend">Особенности:</legend>
+            <label class="filter__label">
               <input type="checkbox" name="features-slider" checked />
               Слайдер
             </label>
-            <label>
+            <label class="filter__label">
               <input type="checkbox" name="features-benefits" />
               Блок преимуществ
             </label>
-            <label>
+            <label class="filter__label">
               <input type="checkbox" name="features-news" checked />
               Новости
             </label>
-            <label>
+            <label class="filter__label">
               <input type="checkbox" name="features-gallery" />
               Галерея
             </label>
-            <label>
+            <label class="filter__label">
               <input type="checkbox" name="features-basket" />
               Корзина
             </label>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button-like button-like--grey" type="submit">Показать</button>
         </form>
       </section>
       <section class="sort">

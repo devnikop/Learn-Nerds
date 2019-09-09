@@ -82,6 +82,7 @@ a {
 }
 
 .button-like:active {
+  color: rgb(255 255 255 / 0.3);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
@@ -110,6 +111,21 @@ a {
 
 .button-like--yellow:active {
   background-color: #e5a722;
+}
+
+.button-like--grey {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.button-like--grey:hover,
+.button-like--grey:focus {
+  background-color: #dfdfdf;
+}
+
+.button-like--grey:active {
+  color: rgb(0 0 0 / 0.3);
+  background-color: #d5d5d5;
 }
 
 .header {
@@ -141,6 +157,14 @@ a {
 .navigation__link:active {
   color: var(--color-text);
   opacity: 0.3;
+}
+
+.main__title {
+  font-size: 55px;
+  font-weight: var(--font-medium);
+  line-height: 55px;
+
+  background-color: var(--color-background);
 }
 
 .slider {
@@ -273,4 +297,45 @@ a {
 
 .form__input--textarea {
   resize: none;
+}
+
+
+/* catalog.html */
+
+.filter {
+
+}
+
+.filter__legend {
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05px;
+}
+
+.range {
+  background-color: var(--color-background);
+}
+
+.range__line {
+  background-color: #d7dcde;
+}
+
+.filter__range-label {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter__range-input {
+  padding: 0;
+  border: none;
+
+  line-height: 22px;
+  background-color: var(--color-background);
+}
+
+.filter__label {
+  color: #283136;
+  line-height: 20px;
 }
