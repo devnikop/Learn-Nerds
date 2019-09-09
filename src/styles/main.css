@@ -408,3 +408,23 @@ a {
   font-size: var(--font-size-main);
   line-height: 18px;
 }
+
+.pagination {}
+
+.pagination__item {}
+
+.pagination__item--hidden {
+  display: none;
+}
+
+.pagination__button {
+  font-size: var(--font-size-main);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pagination__button--active {
+  border: 3px solid #dbdbdb;
+  background-color: #ffffff;
+}
