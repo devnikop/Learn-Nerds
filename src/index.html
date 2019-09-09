@@ -161,23 +161,25 @@
       </div>
     </footer>
     <section class="modal modal--feedback">
-      <h2>Напишите нам</h2>
-      <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-        <label>
+      <h2 class="modal__title">Напишите нам</h2>
+      <form class="modal__form form" method="POST" action="https://echo.htmlacademy.ru">
+        <label class="form__label">
           Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия" />
+          <input class="form__input" type="text" name="name" placeholder="Имя Фамилия" />
         </label>
-        <label>
+        <label class="form__label">
           Ваше email:
-          <input type="email" name="email" placeholder="email@example.com" />
+          <input class="form__input" type="email" name="email" placeholder="email@example.com" />
         </label>
-        <label>
+        <label class="form__label">
           Текст письма:
-          <textarea name="description" placeholder="В свободной форме"></textarea>
+          <textarea class="form__textarea" name="description" placeholder="В свободной форме"></textarea>
         </label>
-        <button type="submit">Отправить</button>
+        <button class="form__submit button-like" type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть окно</button>
+      <button type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
     </section>
   </body>
 </html>
