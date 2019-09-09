@@ -290,6 +290,10 @@ a {
   line-height: 18px;
 }
 
+.form__input {
+  font: inherit;
+}
+
 .form__input::placeholder {
   color: #444444;
   opacity: 0.5;
@@ -340,7 +344,8 @@ a {
   padding: 0;
   border: none;
 
-  font-size: var(--font-size-main);
+  color: #283136;
+  font: inherit;
   line-height: 22px;
   background-color: var(--color-background);
 }
