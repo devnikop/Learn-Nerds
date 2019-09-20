@@ -54,6 +54,9 @@
 }
 
 body {
+  margin: 0 auto;
+  width: 1160px;
+
   font-size: var(--font-size-main);
   line-height: var(--line-height-main);
   font-family: var(--font-family-main);
@@ -177,6 +180,10 @@ a {
   background-color: var(--color-background);
 }
 
+.slider__item {
+  width: 580px;
+}
+
 .slider__slogan {
   font-size: 55px;
   line-height: 55px;
@@ -189,6 +196,17 @@ a {
 
 .slider__link {}
 
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-right: 60px;
+}
+
+.features__item {
+  width: 300px;
+}
+
 .features__title {
   font-size: 24px;
   line-height: 30px;
@@ -197,6 +215,15 @@ a {
 }
 
 .features__link {}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__left {
+  width: 700px;
+}
 
 .info__slogan {
   font-size: 45px;
@@ -207,6 +234,10 @@ a {
 .info__list-title {
   font-weight: var(--font-bold);
   text-transform: uppercase;
+}
+
+.info__right {
+  width: 360px;
 }
 
 .info__table-title {
@@ -227,6 +258,11 @@ a {
 .table__cell--data {
   font-size: 45px;
   font-weight: var(--font-bold);
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects__item {
@@ -266,6 +302,26 @@ a {
   color: inherit;
 }
 
+.footer {
+}
+
+.footer__map {
+  width: 320px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  width: 260px;
+}
+
+.footer-right {
+  width: 580px;
+}
+
 .footer__slogan {
   font-size: 36px;
   font-weight: var(--font-bold);
@@ -276,6 +332,11 @@ a {
   font-size: var(--font-size-main);
   color: #444444;
   line-height: 22px;
+}
+
+.modal {
+  width: 960px;
+  padding: 70px 100px 80px;
 }
 
 .modal__title {
