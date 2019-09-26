@@ -419,7 +419,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: var(--desktop);
-  margin: 0 auto;
+  margin: 0 auto 45px;
   padding-bottom: 80px;
 
   border-bottom: 2px solid #eeeeee;
@@ -533,12 +533,26 @@ img {
   font-size: 60%;
 }
 
+.projects {
+  width: var(--desktop);
+  margin: 0 auto 80px;
+  padding-bottom: 40px;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
 .projects__list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .projects__item {
+  width: 260px;
+
   opacity: 0.2;
 }
 
