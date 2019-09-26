@@ -9,18 +9,30 @@
 
   <body>
     <header class="header">
-      <a>
-        <img class="header__logo" src="../img/nerds-logo.svg" alt="Main logotype" />
-      </a>
-      <nav>
-        <ul class="header__navigation navigation">
-          <li><a class="navigation__link" href="">Студия</a></li>
-          <li><a class="navigation__link" href="">Клиенты</a></li>
-          <li><a class="navigation__link" href="catalog.html">Магазин</a></li>
-          <li><a class="navigation__link" href="">Контакты</a></li>
-          <li><a class="navigation__link" href="">Корзина</a></li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <a>
+          <img class="header__logo" src="../img/nerds-logo.svg" alt="Main logotype" />
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Клиенты</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Контакты</a>
+            </li>
+            <li class="navigation__item navigation__item--basket">
+              <a class="navigation__link" href="">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Студия разработки Nerds</h1>
