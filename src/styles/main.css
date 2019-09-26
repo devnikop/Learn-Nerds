@@ -28,6 +28,7 @@
   --color-text: #000000;
   --color-text-white: #ffffff;
   --color-background: #eeeeee;
+  --color-background-white: #ffffff;
 
   --font-regular: 400;
   --font-medium: 500;
@@ -75,14 +76,23 @@ img {
 }
 
 .button-like {
-  padding: 0;
+  display: inline-block;
+  padding: 19px 40px 18px;
 
   font-size: var(--font-size-main);
   line-height: 18px;
   font-weight: var(--font-medium);
   color: var(--color-text-white);
+  text-transform: uppercase;
+
   border: none;
+  border-radius: 2px;
   background-color: #fb565a;
+}
+
+.button-like--long {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .button-like:hover,
@@ -224,25 +234,117 @@ img {
 .main {}
 
 .slider {
+  position: relative;
+
+  padding-top: 20px;
+
   color: var(--color-text);
   background-color: var(--color-background);
 }
 
+.slider__list {
+  width: var(--desktop);
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
 .slider__item {
+  display: none;
+  padding: 80px 0 80px;
+
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.slider__item--current {
+  display: block;
+}
+
+.slider__item--first {
+  background-image: url('../../img/slide1.png');
+}
+
+.slider__item--second {
+  background-image: url('../../img/slide2.png');
+}
+
+.slider__item--third {
+  background-image: url('../../img/slide3.png');
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 580px;
 }
 
 .slider__slogan {
+  margin-bottom: 40px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: var(--font-medium);
 }
 
 .slider__text {
+  margin: 0;
+
   color: #283136;
 }
 
-.slider__link {}
+.slider__link {
+  margin-top: 40px;
+}
+
+.slider__controls-list {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  width: 90px;
+
+  list-style: none;
+}
+
+.controls__item {}
+
+.controls__button {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  background-color: var(--color-background-white);
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.controls__button--current::before {
+  display: block;
+  margin: 0 auto;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+
+  content: '';
+}
 
 .features__list {
   display: flex;

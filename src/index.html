@@ -39,30 +39,62 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider__list">
-          <li class="slider__item">
-            <b class="slider__slogan">Долго, дорого, скрупулезно</b>
-            <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slider__link button-like" href="">Узнать больше</a>
+          <li class="slider__item slider__item--first slider__item--current">
+            <div class="slider__wrapper">
+              <b class="slider__slogan"
+                >Долго, дорого,<br />
+                скрупулезно</b
+              >
+              <p class="slider__text">
+                Математически выверенный дизайн<br />
+                для вашего сайта или мобильного приложения.
+              </p>
+              <a class="slider__link button-like button-like--long" href="">Узнать больше</a>
+            </div>
           </li>
-          <li class="slider__item">
-            <b class="slider__slogan">Любим математику как никто другой</b>
-            <p class="slider__text">
-              Никакого креатива, только математические формулы для расчета идеальных пропорций.
-            </p>
-            <a class="slider__link button-like" href="">Узнать больше</a>
+          <li class="slider__item slider__item--second">
+            <div class="slider__wrapper">
+              <b class="slider__slogan"
+                >Любим математику<br />
+                как никто другой</b
+              >
+              <p class="slider__text">
+                Никакого креатива, только математические формулы<br />
+                для расчета идеальных пропорций.
+              </p>
+              <a class="slider__link button-like button-like--long" href="">Узнать больше</a>
+            </div>
           </li>
-          <li class="slider__item">
-            <b class="slider__slogan">Только ночь, только хардкор</b>
-            <p class="slider__text">
-              Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-            </p>
-            <a class="slider__link button-like" href="">Узнать больше</a>
+          <li class="slider__item slider__item--third">
+            <div class="slider__wrapper">
+              <b class="slider__slogan"
+                >Только ночь,<br />
+                только хардкор</b
+              >
+              <p class="slider__text">
+                Работать днем, как все? Мы против этого.<br />
+                Ближе к полуночи работа только начинается.
+              </p>
+              <a class="slider__link button-like button-like--long" href="">Узнать больше</a>
+            </div>
           </li>
         </ul>
-        <ul>
-          <li><button>Первый слайд</button></li>
-          <li><button>Второй слайд</button></li>
-          <li><button>Третий слайд</button></li>
+        <ul class="slider__controls-list controls">
+          <li class="controls__item">
+            <button class="controls__button controls__button--current">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+          </li>
+          <li class="controls__item">
+            <button class="controls__button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+          </li>
+          <li class="controls__item">
+            <button class="controls__button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </li>
         </ul>
       </section>
       <section class="features">
