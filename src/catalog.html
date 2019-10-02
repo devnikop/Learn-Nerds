@@ -131,7 +131,10 @@
             <li class="templates__item template">
               <div class="template__wrapper">
                 <h3 class="template__title">Barbershop</h3>
-                <p class="template__text">Сайт салона красоты.<br> Для мужчин, да.</p>
+                <p class="template__text">
+                  Сайт салона красоты.<br />
+                  Для мужчин, да.
+                </p>
                 <a class="template__button button-like button-like--buy" href="">9 900 руб.</a>
               </div>
               <img class="template__image" src="../img/img-barbershop.jpg" alt="Barbershop" />
@@ -165,20 +168,29 @@
         <section class="pagination">
           <h2 class="visually-hidden">Постраничная навигация</h2>
           <ul class="pagination__list">
-            <li class="pagination__item pagination__item--hidden">
-              <button class="pagination__button button-like button-like--grey">Предыдущая</button>
+            <li class="pagination__item ">
+              <a class="pagination__button pagination__button--nearest button-like button-like--grey">Предыдущая</a>
             </li>
             <li class="pagination__item">
-              <button class="pagination__button pagination__button--active button-like button-like--grey">1</button>
+              <a
+                class="pagination__button pagination__button--page pagination__button--current button-like button-like--grey"
+              >
+                1
+              </a>
             </li>
             <li class="pagination__item">
-              <button class="pagination__button button-like button-like--grey">2</button>
+              <a class="pagination__button pagination__button--page button-like button-like--grey" href="">2</a>
             </li>
             <li class="pagination__item">
-              <button class="pagination__button button-like button-like--grey">3</button>
+              <a class="pagination__button pagination__button--page button-like button-like--grey" href="">3</a>
             </li>
             <li class="pagination__item">
-              <button class="pagination__button button-like button-like--grey">Следующая</button>
+              <a
+                class="pagination__button pagination__button--nearest pagination__button-- button-like button-like--grey"
+                href=""
+              >
+                Следующая
+              </a>
             </li>
           </ul>
         </section>
@@ -186,37 +198,40 @@
     </main>
     <footer class="footer">
       <div class="footer__map map">
-        <div class="map__wrapper">
-          <p class="map__title">NЁRDS DESIGN STUDIO</p>
-          <p class="map__address">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="map__phone">
-            тел.
-            <a class="map__phone-link" href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
-          </p>
-          <a class="button-like">Напишите нам</a>
+        <div class="map__wrapper-center">
+          <div class="map__wrapper">
+            <p class="map__title">NЁRDS DESIGN STUDIO</p>
+            <p class="map__address">
+              191186, Санкт-Петербург,<br />
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="map__phone">
+              тел.
+              <a class="map__phone-link" href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
+            </p>
+            <a class="button-like" href="">Напишите нам</a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <ul class="footer__socials socials">
           <li class="socials__item">
-            <a>
+            <a class="socials__link socials__link--vk" href="">
               <span class="visually-hidden">VKontakte</span>
             </a>
           </li>
           <li class="socials__item">
-            <a>
+            <a class="socials__link socials__link--fb" href="">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="socials__item">
-            <a>
+            <a class="socials__link socials__link--ig" href="">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
         </ul>
-        <div>
+        <div class="footer-right">
           <b class="footer__slogan">Давайте дружить, это выгодно!</b>
           <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
         </div>

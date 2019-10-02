@@ -566,7 +566,7 @@ img {
 
 .projects {
   width: var(--desktop);
-  margin: 0 auto 80px;
+  margin: 0 auto;
   padding-bottom: 40px;
 
   border-bottom: 2px solid #eeeeee;
@@ -599,6 +599,11 @@ img {
 }
 
 .footer {
+  margin-top: 80px;
+}
+
+.footer--inner-page {
+  margin-top: 60px;
 }
 
 .map {
@@ -835,7 +840,7 @@ img {
 }
 
 .filter__legend--value {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .range {
@@ -986,6 +991,7 @@ img {
 .sort__list--sort {
   width: 40px;
   margin-left: 50px;
+  padding-right: 10px;
 }
 
 .sort__item {
@@ -1044,7 +1050,9 @@ img {
   border-bottom: 10px solid #010101;
 }
 
-.templates {}
+.templates {
+  margin-bottom: 60px;
+}
 
 .templates__list {
   display: flex;
@@ -1061,6 +1069,10 @@ img {
 
 .templates__item:nth-child(2n - 1) {
   margin-right: auto;
+}
+
+.templates__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .template {
@@ -1141,20 +1153,47 @@ img {
 
 .pagination {}
 
-.pagination__item {}
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination__item {
+  margin-right: 10px;
+}
 
 .pagination__item--hidden {
   display: none;
 }
 
 .pagination__button {
-  font-size: var(--font-size-main);
-  font-weight: var(--font-medium);
-  line-height: 18px;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 50px;
+  box-sizing: border-box;
+
+  border: 3px solid transparent;
 }
 
-.pagination__button--active {
+.pagination__button--nearest {
+  width: 260px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pagination__button--page {
+  width: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.pagination__button--current {
   border: 3px solid #dbdbdb;
   background-color: #ffffff;
 }
