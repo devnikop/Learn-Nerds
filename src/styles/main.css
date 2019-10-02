@@ -176,11 +176,11 @@ img {
 
 .header__logo:hover,
 .header__logo:focus {
-  opacity: 0.8;
+  filter: opacity(80%);
 }
 
 .header__logo:active {
-  opacity: 0.3;
+  filter: opacity(30%);
 }
 
 .header__navigation {
@@ -246,7 +246,7 @@ img {
 
 .navigation__link:active {
   color: var(--color-text);
-  opacity: 0.3;
+  filter: opacity(30%);
 }
 
 .navigation__link--current {
@@ -291,7 +291,7 @@ img {
 }
 
 .slider__item--current {
-  filter: opacity(100);
+  filter: opacity(100%);
 }
 
 .slider__item--first {
@@ -586,17 +586,17 @@ img {
   display: block;
   width: 260px;
 
-  opacity: 0.2;
+  filter: opacity(20%);
   cursor: pointer;
 }
 
 .projects__link:hover,
 .projects__link:focus {
-  opacity: 1;
+  filter: opacity(100%);
 }
 
 .projects__link:active {
-  opacity: 0.1;
+  filter: opacity(10%);
 }
 
 .footer {
@@ -631,7 +631,7 @@ img {
   padding: 55px 50px 45px;
   box-sizing: border-box;
 
-  background-color: #ffffff;
+  background-color: var(--color-background-white);
 }
 
 .map__title {
@@ -779,11 +779,11 @@ img {
 
 .form__input::placeholder {
   color: #444444;
-  opacity: 0.5;
+  filter: opacity(50%);
 }
 
 .form__input:focus::placeholder {
-  opacity: 1;
+  filter: opacity(100%);
 }
 
 .form__input:invalid {
@@ -961,7 +961,7 @@ img {
 }
 
 .filter__input:disabled + .filter__label {
-  opacity: 0.3;
+  filter: opacity(30%);
 }
 
 .filter__label--radio:hover {
@@ -1009,16 +1009,17 @@ img {
 .sort__item {
   margin-right: 25px;
 
-  opacity: 0.3;
+  filter: opacity(30%);
 }
 
 .sort__item:hover,
 .sort__item:focus {
-  opacity: 0.6;
+  filter: opacity(60%);
+
 }
 
 .sort__item:active {
-  opacity: 1;
+  filter: opacity(100%);
 }
 
 .sort__item:last-of-type {
@@ -1026,7 +1027,7 @@ img {
 }
 
 .sort__item--current {
-  opacity: 1;
+  filter: opacity(100%);
 }
 
 .sort__item--sort {
@@ -1132,7 +1133,7 @@ img {
 }
 
 .template:hover .template__wrapper {
-  filter: opacity(100);
+  filter: opacity(100%);
 }
 
 .template__title {
@@ -1187,8 +1188,6 @@ img {
   padding: 0;
   height: 50px;
   box-sizing: border-box;
-
-  border: 3px solid transparent;
 }
 
 .pagination__button--nearest {
@@ -1204,6 +1203,17 @@ img {
 }
 
 .pagination__button--current {
-  border: 3px solid #dbdbdb;
-  background-color: #ffffff;
+  box-shadow: inset 0 0 0 3px #dbdbdb;
+  background-color: var(--color-background-white);
+}
+
+.pagination__button--current:hover,
+.pagination__button--current:focus {
+  background-color: var(--color-background-white);
+}
+
+.pagination__button--current:active {
+  box-shadow: inset 0 0 0 3px #dbdbdb;
+  color: inherit;
+  background-color: var(--color-background-white);
 }
