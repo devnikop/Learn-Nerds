@@ -86,6 +86,7 @@ img {
   font-weight: var(--font-medium);
   color: var(--color-text-white);
   text-transform: uppercase;
+  vertical-align: middle;
 
   border: none;
   border-radius: var(--standard-radius);
