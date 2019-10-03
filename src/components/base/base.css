@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../../fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../../fonts/Roboto-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../../fonts/Roboto-Bold.woff2") format("woff2");
+}
+
+:root {
+  --desktop: 1160px;
+
+  --color-text: #000000;
+  --color-text-white: #ffffff;
+  --color-background: #eeeeee;
+  --color-background-white: #ffffff;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --standard-radius: 2px;
+
+  --font-size-main: 16px;
+  --line-height-main: 24px;
+
+  --font-family-main: "Roboto", "Arial", "sans-serif";
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+
+  font-size: var(--font-size-main);
+  line-height: var(--line-height-main);
+  font-family: var(--font-family-main);
+  font-weight: var(--font-regular);
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

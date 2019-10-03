@@ -11,7 +11,11 @@
     <header class="header header--inner-page">
       <div class="header__wrapper">
         <a href="index.html">
-          <img class="header__logo" src="../img/nerds-logo.svg" alt="Main logotype" />
+          <img
+            class="header__logo"
+            src="../img/nerds-logo.svg"
+            alt="Main logotype"
+          />
         </a>
         <nav class="header__navigation">
           <ul class="header__navigation-list navigation">
@@ -41,49 +45,137 @@
       <div class="main__wrapper">
         <section class="filter">
           <h2 class="visually-hidden">Фильтр</h2>
-          <form class="filter__form" method="POST" action="https://echo.htmlacademy.ru">
+          <form
+            class="filter__form"
+            method="POST"
+            action="https://echo.htmlacademy.ru"
+          >
             <fieldset class="filter__fieldset">
-              <legend class="filter__legend filter__legend--value">Стоимость:</legend>
+              <legend class="filter__legend filter__legend--value">
+                Стоимость:
+              </legend>
               <div class="filter__range range">
                 <div class="range__line">
-                  <button type="button" class="range__button range__button--left"></button>
-                  <button type="button" class="range__button range__button--right"></button>
+                  <button
+                    type="button"
+                    class="range__button range__button--left"
+                  ></button>
+                  <button
+                    type="button"
+                    class="range__button range__button--right"
+                  ></button>
                 </div>
               </div>
               <div class="filter__range-wrapper">
                 <label class="filter__range-label">
                   От
-                  <input class="filter__range-input" name="cost-min" value="0" />
+                  <input
+                    class="filter__range-input"
+                    name="cost-min"
+                    value="0"
+                  />
                 </label>
                 <label class="filter__range-label">
                   До
-                  <input class="filter__range-input" name="cost-max" value="15000" />
+                  <input
+                    class="filter__range-input"
+                    name="cost-max"
+                    value="15000"
+                  />
                 </label>
               </div>
             </fieldset>
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Сетка:</legend>
-              <input class="filter__input" id="radio-adaptive" type="radio" name="grid" checked />
-              <label class="filter__label filter__label--radio" for="radio-adaptive">Адаптивная</label>
-              <input class="filter__input" id="radio-fix" type="radio" name="grid" />
-              <label class="filter__label filter__label-radio" for="radio-fix">Фиксированная</label>
-              <input class="filter__input" id="radio-rubber" type="radio" name="grid" />
-              <label class="filter__label filter__label--radio" for="radio-rubber">Резиновая</label>
+              <input
+                class="filter__input"
+                id="radio-adaptive"
+                type="radio"
+                name="grid"
+                checked
+              />
+              <label
+                class="filter__label filter__label--radio"
+                for="radio-adaptive"
+                >Адаптивная</label
+              >
+              <input
+                class="filter__input"
+                id="radio-fix"
+                type="radio"
+                name="grid"
+              />
+              <label class="filter__label filter__label-radio" for="radio-fix"
+                >Фиксированная</label
+              >
+              <input
+                class="filter__input"
+                id="radio-rubber"
+                type="radio"
+                name="grid"
+              />
+              <label
+                class="filter__label filter__label--radio"
+                for="radio-rubber"
+                >Резиновая</label
+              >
             </fieldset>
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Особенности:</legend>
-              <input class="filter__input" id="features-slider-id" type="checkbox" name="features-slider" checked />
-              <label class="filter__label" for="features-slider-id">Слайдер</label>
-              <input class="filter__input" id="features-benefits-id" type="checkbox" name="features-benefits" />
-              <label class="filter__label" for="features-benefits-id">Блок преимуществ</label>
-              <input class="filter__input" id="features-news-id" type="checkbox" name="features-news" checked />
-              <label class="filter__label" for="features-news-id">Новости</label>
-              <input class="filter__input" id="features-gallery-id" type="checkbox" name="features-gallery" />
-              <label class="filter__label" for="features-gallery-id">Галерея</label>
-              <input class="filter__input" id="features-basket-id" type="checkbox" name="features-basket" />
-              <label class="filter__label" for="features-basket-id">Корзина</label>
+              <input
+                class="filter__input"
+                id="features-slider-id"
+                type="checkbox"
+                name="features-slider"
+                checked
+              />
+              <label class="filter__label" for="features-slider-id"
+                >Слайдер</label
+              >
+              <input
+                class="filter__input"
+                id="features-benefits-id"
+                type="checkbox"
+                name="features-benefits"
+              />
+              <label class="filter__label" for="features-benefits-id"
+                >Блок преимуществ</label
+              >
+              <input
+                class="filter__input"
+                id="features-news-id"
+                type="checkbox"
+                name="features-news"
+                checked
+              />
+              <label class="filter__label" for="features-news-id"
+                >Новости</label
+              >
+              <input
+                class="filter__input"
+                id="features-gallery-id"
+                type="checkbox"
+                name="features-gallery"
+              />
+              <label class="filter__label" for="features-gallery-id"
+                >Галерея</label
+              >
+              <input
+                class="filter__input"
+                id="features-basket-id"
+                type="checkbox"
+                name="features-basket"
+              />
+              <label class="filter__label" for="features-basket-id"
+                >Корзина</label
+              >
             </fieldset>
-            <button class="filter__button button-like button-like--grey" type="submit">Показать</button>
+            <button
+              class="filter__button button-like button-like--grey"
+              type="submit"
+            >
+              Показать
+            </button>
           </form>
         </section>
         <section class="sort">
@@ -105,7 +197,10 @@
               <a class="sort__link sort__link--sort sort__link--desc"></a>
             </li>
             <li class="sort__item sort__item--sort">
-              <a class="sort__link sort__link--sort sort__link--asc" href=""></a>
+              <a
+                class="sort__link sort__link--sort sort__link--asc"
+                href=""
+              ></a>
             </li>
           </ul>
         </section>
@@ -116,17 +211,31 @@
               <div class="template__wrapper">
                 <h3 class="template__title">Sedona</h3>
                 <p class="template__text">Информационный сайт для туристов</p>
-                <a class="template__button button-like button-like--buy" href="">9 900 руб.</a>
+                <a class="template__button button-like button-like--buy" href=""
+                  >9 900 руб.</a
+                >
               </div>
-              <img class="template__image" src="../img/img-sedona.jpg" alt="Sedona" />
+              <img
+                class="template__image"
+                src="../img/img-sedona.jpg"
+                alt="Sedona"
+              />
             </li>
             <li class="templates__item template">
               <div class="template__wrapper">
                 <h3 class="template__title">Pink App</h3>
-                <p class="template__text">Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="template__button button-like button-like--buy" href="">9 900 руб.</a>
+                <p class="template__text">
+                  Продуктовый лендинг приложения для iOS и Android
+                </p>
+                <a class="template__button button-like button-like--buy" href=""
+                  >9 900 руб.</a
+                >
               </div>
-              <img class="template__image" src="../img/img-pink.jpg" alt="Pink" />
+              <img
+                class="template__image"
+                src="../img/img-pink.jpg"
+                alt="Pink"
+              />
             </li>
             <li class="templates__item template">
               <div class="template__wrapper">
@@ -135,33 +244,61 @@
                   Сайт салона красоты.<br />
                   Для мужчин, да.
                 </p>
-                <a class="template__button button-like button-like--buy" href="">9 900 руб.</a>
+                <a class="template__button button-like button-like--buy" href=""
+                  >9 900 руб.</a
+                >
               </div>
-              <img class="template__image" src="../img/img-barbershop.jpg" alt="Barbershop" />
+              <img
+                class="template__image"
+                src="../img/img-barbershop.jpg"
+                alt="Barbershop"
+              />
             </li>
             <li class="templates__item template">
               <div class="template__wrapper">
                 <h3 class="template__title">Mishka</h3>
                 <p class="template__text">Интернет-магазин вязаных игрушек</p>
-                <a class="template__button button-like button-like--buy" href="">9 900 руб.</a>
+                <a class="template__button button-like button-like--buy" href=""
+                  >9 900 руб.</a
+                >
               </div>
-              <img class="template__image" src="../img/img-mishka.jpg" alt="Mishka" />
+              <img
+                class="template__image"
+                src="../img/img-mishka.jpg"
+                alt="Mishka"
+              />
             </li>
             <li class="templates__item template">
               <div class="template__wrapper">
                 <h3 class="template__title">A Plus</h3>
-                <p class="template__text">Лендинг курсов повышения квалификации</p>
-                <a class="template__button button-like button-like--buy" href="">9 900 руб.</a>
+                <p class="template__text">
+                  Лендинг курсов повышения квалификации
+                </p>
+                <a class="template__button button-like button-like--buy" href=""
+                  >9 900 руб.</a
+                >
               </div>
-              <img class="template__image" src="../img/img-aplus.jpg" alt="A plus" />
+              <img
+                class="template__image"
+                src="../img/img-aplus.jpg"
+                alt="A plus"
+              />
             </li>
             <li class="templates__item template">
               <div class="template__wrapper">
                 <h3 class="template__title">Кваст</h3>
-                <p class="template__text">Промо-сайт производителя крафтового кваса</p>
-                <a class="template__button button-like button-like--buy" href="">9 900 руб.</a>
+                <p class="template__text">
+                  Промо-сайт производителя крафтового кваса
+                </p>
+                <a class="template__button button-like button-like--buy" href=""
+                  >9 900 руб.</a
+                >
               </div>
-              <img class="template__image" src="../img/img-kvast.jpg" alt="Kvast" />
+              <img
+                class="template__image"
+                src="../img/img-kvast.jpg"
+                alt="Kvast"
+              />
             </li>
           </ul>
         </section>
@@ -169,7 +306,10 @@
           <h2 class="visually-hidden">Постраничная навигация</h2>
           <ul class="pagination__list">
             <li class="pagination__item pagination__item--hidden">
-              <a class="pagination__button pagination__button--nearest button-like button-like--grey">Предыдущая</a>
+              <a
+                class="pagination__button pagination__button--nearest button-like button-like--grey"
+                >Предыдущая</a
+              >
             </li>
             <li class="pagination__item">
               <a
@@ -179,10 +319,18 @@
               </a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__button pagination__button--page button-like button-like--grey" href="">2</a>
+              <a
+                class="pagination__button pagination__button--page button-like button-like--grey"
+                href=""
+                >2</a
+              >
             </li>
             <li class="pagination__item">
-              <a class="pagination__button pagination__button--page button-like button-like--grey" href="">3</a>
+              <a
+                class="pagination__button pagination__button--page button-like button-like--grey"
+                href=""
+                >3</a
+              >
             </li>
             <li class="pagination__item">
               <a
@@ -207,7 +355,9 @@
             </p>
             <p class="map__phone">
               тел.
-              <a class="map__phone-link" href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
+              <a class="map__phone-link" href="tel:+7812275-75-75"
+                >+7 (812) 275-75-75</a
+              >
             </p>
             <a class="button-like" href="">Напишите нам</a>
           </div>
@@ -239,14 +389,28 @@
     </footer>
     <section class="modal modal--feedback">
       <h2 class="modal__title">Напишите нам</h2>
-      <form class="modal__form form" method="POST" action="https://echo.htmlacademy.ru">
+      <form
+        class="modal__form form"
+        method="POST"
+        action="https://echo.htmlacademy.ru"
+      >
         <label class="form__label">
           Ваше имя:
-          <input class="form__input" type="text" name="name" placeholder="Имя Фамилия" />
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+          />
         </label>
         <label class="form__label">
           Ваше email:
-          <input class="form__input" type="email" name="email" placeholder="email@example.com" />
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
         </label>
         <label class="form__label">
           Текст письма:
@@ -256,7 +420,9 @@
             placeholder="В свободной форме"
           ></textarea>
         </label>
-        <button class="form__submit button-like" type="submit">Отправить</button>
+        <button class="form__submit button-like" type="submit">
+          Отправить
+        </button>
       </form>
       <button type="button">
         <span class="visually-hidden">Закрыть окно</span>

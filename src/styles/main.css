@@ -1,81 +1,5 @@
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src:  local('Roboto'), local('Roboto-Regular'),
-        url('../fonts/Roboto-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src:  local('Roboto Medium'), local('Roboto-Medium'),
-        url('../fonts/Roboto-Medium.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src:  local('Roboto Bold'), local('Roboto-Bold'),
-        url('../fonts/Roboto-Bold.woff2') format('woff2');
-}
-
-:root {
-  --desktop: 1160px;
-
-  --color-text: #000000;
-  --color-text-white: #ffffff;
-  --color-background: #eeeeee;
-  --color-background-white: #ffffff;
-
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-bold: 700;
-
-  --standard-radius: 2px;
-
-  --font-size-main: 16px;
-  --line-height-main: 24px;
-
-  --font-family-main: 'Roboto', 'Arial', 'sans-serif';
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-body {
-  margin: 0 auto;
-
-  font-size: var(--font-size-main);
-  line-height: var(--line-height-main);
-  font-family: var(--font-family-main);
-  font-weight: var(--font-regular);
-  color: var(--color-text);
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+@import "../components/base/normalize.css";
+@import "../components/base/base.css";
 
 .button-like {
   display: inline-block;
@@ -94,10 +18,7 @@ img {
 
   cursor: pointer;
 
-  transition-property:
-    color,
-    box-shadow,
-    background-color;
+  transition-property: color, box-shadow, background-color;
   transition-duration: 200ms;
   transition-timing-function: linear;
 }
@@ -234,11 +155,11 @@ img {
   height: 15px;
   margin-right: 25px;
 
-  background-image: url('../../img/cart-icon.svg');
+  background-image: url("../../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
 
-  content: '';
+  content: "";
 }
 
 .navigation__item--current {
@@ -267,7 +188,8 @@ img {
   filter: opacity(30%);
 }
 
-.main {}
+.main {
+}
 
 .slider {
   position: relative;
@@ -309,15 +231,15 @@ img {
 }
 
 .slider__item--first {
-  background-image: url('../../img/slide1.png');
+  background-image: url("../../img/slide1.png");
 }
 
 .slider__item--second {
-  background-image: url('../../img/slide2.png');
+  background-image: url("../../img/slide2.png");
 }
 
 .slider__item--third {
-  background-image: url('../../img/slide3.png');
+  background-image: url("../../img/slide3.png");
 }
 
 .slider__wrapper {
@@ -365,7 +287,8 @@ img {
   list-style: none;
 }
 
-.controls__item {}
+.controls__item {
+}
 
 .controls__button {
   width: 18px;
@@ -389,7 +312,7 @@ img {
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 
-  content: '';
+  content: "";
 }
 
 .features {
@@ -425,22 +348,22 @@ img {
   width: 300px;
   height: 146px;
 
-  content: '';
+  content: "";
 }
 
 .features__item--web-sites::before {
   background-color: #fb565a;
-  background-image: url('../../img/illustration-1.png');
+  background-image: url("../../img/illustration-1.png");
 }
 
 .features__item--apps::before {
   background-color: #00ca74;
-  background-image: url('../../img/illustration-2.png');
+  background-image: url("../../img/illustration-2.png");
 }
 
 .features__item--presentation::before {
   background-color: #efc849;
-  background-image: url('../../img/illustration-3.png');
+  background-image: url("../../img/illustration-3.png");
 }
 
 .features__title {
@@ -459,7 +382,8 @@ img {
   margin-bottom: 35px;
 }
 
-.features__link {}
+.features__link {
+}
 
 .info {
   display: flex;
@@ -519,7 +443,7 @@ img {
 
   background-color: #fb565a;
 
-  content: '';
+  content: "";
 }
 
 .info__right {
@@ -634,7 +558,7 @@ img {
   line-height: 18px;
 
   background-color: #f1efe8;
-  background-image: url('../../img/map.png');
+  background-image: url("../../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -723,7 +647,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 
-  content: '';
+  content: "";
 
   transition-property: filter;
   transition-duration: 200ms;
@@ -731,15 +655,15 @@ img {
 }
 
 .socials__link--vk::before {
-  background-image: url('../../img/vk-icon.svg');
+  background-image: url("../../img/vk-icon.svg");
 }
 
 .socials__link--fb::before {
-  background-image: url('../../img/fb-icon.svg');
+  background-image: url("../../img/fb-icon.svg");
 }
 
 .socials__link--ig::before {
-  background-image: url('../../img/insta-icon.svg');
+  background-image: url("../../img/insta-icon.svg");
 }
 
 .socials__link:hover,
@@ -821,7 +745,6 @@ img {
   resize: none;
 }
 
-
 /* catalog.html */
 
 .main--shop {
@@ -901,7 +824,7 @@ img {
 
   background-color: #00ca74;
 
-  content: '';
+  content: "";
 }
 
 .range__button {
@@ -932,7 +855,7 @@ img {
   border-radius: 50%;
   background-color: #ababab;
 
-  content: '';
+  content: "";
 }
 
 .range__button--left {
@@ -1088,7 +1011,7 @@ img {
 
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
-  content: '';
+  content: "";
 }
 
 .sort__link--desc::before {
@@ -1151,11 +1074,12 @@ img {
 
   border-radius: 50%;
   background-color: var(--color-background-white);
-  box-shadow:
-    calc(var(--position-left) + 10px) 0 0 0 var(--color-background-white),
-    calc((var(--position-left) * 2) + (10px * 2)) 0 0 0 var(--color-background-white);
+  box-shadow: calc(var(--position-left) + 10px) 0 0 0
+      var(--color-background-white),
+    calc((var(--position-left) * 2) + (10px * 2)) 0 0 0
+      var(--color-background-white);
 
-  content: '';
+  content: "";
 }
 
 .template__wrapper {
@@ -1201,9 +1125,11 @@ img {
   box-sizing: border-box;
 }
 
-.template__image {}
+.template__image {
+}
 
-.pagination {}
+.pagination {
+}
 
 .pagination__list {
   display: flex;
