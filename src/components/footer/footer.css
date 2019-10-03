@@ -1,0 +1,42 @@
+.footer {
+}
+
+.footer--inner-page {
+  margin-top: 60px;
+}
+
+.footer__map {
+  margin-bottom: 70px;
+}
+
+.footer-bottom {
+  display: flex;
+  width: var(--desktop);
+  margin: 0 auto;
+}
+
+.footer__socials {
+  margin-right: 120px;
+}
+
+.footer-right {
+  width: 580px;
+  padding-top: 10px;
+}
+
+.footer__slogan {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: var(--font-bold);
+  line-height: 36px;
+}
+
+.footer__text {
+  margin: 0;
+
+  font-size: var(--font-size-main);
+  color: #444444;
+  line-height: 22px;
+}

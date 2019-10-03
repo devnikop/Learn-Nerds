@@ -1,0 +1,50 @@
+.map {
+  padding: 55px 0;
+
+  font-size: var(--font-size-main);
+  color: #666666;
+  line-height: 18px;
+
+  background-color: #f1efe8;
+  background-image: url("./assets/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.map__wrapper-center {
+  width: var(--desktop);
+  margin: 0 auto;
+}
+
+.map__wrapper {
+  width: 320px;
+  padding: 55px 50px 45px;
+  box-sizing: border-box;
+
+  background-color: var(--color-background-white);
+}
+
+.map__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map__address {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.map__phone {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.map__phone-link {
+  color: inherit;
+}

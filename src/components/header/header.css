@@ -1,0 +1,31 @@
+.header {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--desktop);
+  margin: 0 auto;
+}
+
+.header__logo {
+  transition-property: filter;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  filter: opacity(80%);
+}
+
+.header__logo:active {
+  filter: opacity(30%);
+}
+
+.header__navigation {
+  width: 800px;
+}

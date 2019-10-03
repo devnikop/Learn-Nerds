@@ -1,0 +1,65 @@
+.range {
+  padding: 30px 20px 29px;
+
+  border-radius: var(--standard-radius);
+  background-color: var(--color-background);
+}
+
+.range__line {
+  position: relative;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.range__line::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 75%;
+  height: 100%;
+
+  background-color: #00ca74;
+
+  content: "";
+}
+
+.range__button {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0px 0px #cccdcd;
+  transform: translate(0, -50%);
+
+  background-color: var(--color-background-white);
+
+  cursor: pointer;
+}
+
+.range__button::before {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background-color: #ababab;
+
+  content: "";
+}
+
+.range__button--left {
+  left: 0;
+}
+
+.range__button--right {
+  left: 75%;
+}

@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>Catalog</title>
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./components/base/style.css" />
   </head>
 
-  <body>
-    <header class="header header--inner-page">
+  <body class="body">
+    <header class="body__header body__header--shop-page header">
       <div class="header__wrapper">
         <a href="index.html">
           <img
             class="header__logo"
-            src="../img/nerds-logo.svg"
+            src="./components/base/img/nerds-logo.svg"
             alt="Main logotype"
           />
         </a>
@@ -38,12 +37,12 @@
         </nav>
       </div>
     </header>
-    <main class="main main--shop">
+    <main class="body__main body__main--shop-page main main--shop-page">
       <div class="main__title-wrapper">
         <h1 class="main__title">Магазин готовых шаблонов</h1>
       </div>
       <div class="main__wrapper">
-        <section class="filter">
+        <section class="main__filter filter">
           <h2 class="visually-hidden">Фильтр</h2>
           <form
             class="filter__form"
@@ -170,15 +169,12 @@
                 >Корзина</label
               >
             </fieldset>
-            <button
-              class="filter__button button-like button-like--grey"
-              type="submit"
-            >
+            <button class="filter__button button button--grey" type="submit">
               Показать
             </button>
           </form>
         </section>
-        <section class="sort">
+        <section class="main__sort sort">
           <h2 class="visually-hidden">Сортировка</h2>
           <p class="sort__text">Сортировать:</p>
           <ul class="sort__list sort__list--main">
@@ -204,20 +200,20 @@
             </li>
           </ul>
         </section>
-        <section class="templates">
+        <section class="main__templates templates">
           <h2 class="visually-hidden">Список готовых шаблонов</h2>
           <ul class="templates__list">
             <li class="templates__item template">
               <div class="template__wrapper">
                 <h3 class="template__title">Sedona</h3>
                 <p class="template__text">Информационный сайт для туристов</p>
-                <a class="template__button button-like button-like--buy" href=""
+                <a class="template__button button button--buy" href=""
                   >9 900 руб.</a
                 >
               </div>
               <img
                 class="template__image"
-                src="../img/img-sedona.jpg"
+                src="./components/base/img/img-sedona.jpg"
                 alt="Sedona"
               />
             </li>
@@ -227,13 +223,13 @@
                 <p class="template__text">
                   Продуктовый лендинг приложения для iOS и Android
                 </p>
-                <a class="template__button button-like button-like--buy" href=""
+                <a class="template__button button button--buy" href=""
                   >9 900 руб.</a
                 >
               </div>
               <img
                 class="template__image"
-                src="../img/img-pink.jpg"
+                src="./components/base/img/img-pink.jpg"
                 alt="Pink"
               />
             </li>
@@ -244,13 +240,13 @@
                   Сайт салона красоты.<br />
                   Для мужчин, да.
                 </p>
-                <a class="template__button button-like button-like--buy" href=""
+                <a class="template__button button button--buy" href=""
                   >9 900 руб.</a
                 >
               </div>
               <img
                 class="template__image"
-                src="../img/img-barbershop.jpg"
+                src="./components/base/img/img-barbershop.jpg"
                 alt="Barbershop"
               />
             </li>
@@ -258,13 +254,13 @@
               <div class="template__wrapper">
                 <h3 class="template__title">Mishka</h3>
                 <p class="template__text">Интернет-магазин вязаных игрушек</p>
-                <a class="template__button button-like button-like--buy" href=""
+                <a class="template__button button button--buy" href=""
                   >9 900 руб.</a
                 >
               </div>
               <img
                 class="template__image"
-                src="../img/img-mishka.jpg"
+                src="./components/base/img/img-mishka.jpg"
                 alt="Mishka"
               />
             </li>
@@ -274,13 +270,13 @@
                 <p class="template__text">
                   Лендинг курсов повышения квалификации
                 </p>
-                <a class="template__button button-like button-like--buy" href=""
+                <a class="template__button button button--buy" href=""
                   >9 900 руб.</a
                 >
               </div>
               <img
                 class="template__image"
-                src="../img/img-aplus.jpg"
+                src="./components/base/img/img-aplus.jpg"
                 alt="A plus"
               />
             </li>
@@ -290,51 +286,51 @@
                 <p class="template__text">
                   Промо-сайт производителя крафтового кваса
                 </p>
-                <a class="template__button button-like button-like--buy" href=""
+                <a class="template__button button button--buy" href=""
                   >9 900 руб.</a
                 >
               </div>
               <img
                 class="template__image"
-                src="../img/img-kvast.jpg"
+                src="./components/base/img/img-kvast.jpg"
                 alt="Kvast"
               />
             </li>
           </ul>
         </section>
-        <section class="pagination">
+        <section class="main__pagination pagination">
           <h2 class="visually-hidden">Постраничная навигация</h2>
           <ul class="pagination__list">
             <li class="pagination__item pagination__item--hidden">
               <a
-                class="pagination__button pagination__button--nearest button-like button-like--grey"
+                class="pagination__button pagination__button--nearest button button--grey"
                 >Предыдущая</a
               >
             </li>
             <li class="pagination__item">
               <a
-                class="pagination__button pagination__button--page pagination__button--current button-like button-like--grey"
+                class="pagination__button pagination__button--page pagination__button--current button button--grey"
               >
                 1
               </a>
             </li>
             <li class="pagination__item">
               <a
-                class="pagination__button pagination__button--page button-like button-like--grey"
+                class="pagination__button pagination__button--page button button--grey"
                 href=""
                 >2</a
               >
             </li>
             <li class="pagination__item">
               <a
-                class="pagination__button pagination__button--page button-like button-like--grey"
+                class="pagination__button pagination__button--page button button--grey"
                 href=""
                 >3</a
               >
             </li>
             <li class="pagination__item">
               <a
-                class="pagination__button pagination__button--nearest pagination__button-- button-like button-like--grey"
+                class="pagination__button pagination__button--nearest pagination__button-- button button--grey"
                 href=""
               >
                 Следующая
@@ -344,7 +340,7 @@
         </section>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="body__footer footer">
       <div class="footer__map map">
         <div class="map__wrapper-center">
           <div class="map__wrapper">
@@ -359,7 +355,7 @@
                 >+7 (812) 275-75-75</a
               >
             </p>
-            <a class="button-like" href="">Напишите нам</a>
+            <a class="button" href="">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -420,7 +416,7 @@
             placeholder="В свободной форме"
           ></textarea>
         </label>
-        <button class="form__submit button-like" type="submit">
+        <button class="form__submit button" type="submit">
           Отправить
         </button>
       </form>

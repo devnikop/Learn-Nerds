@@ -1,0 +1,30 @@
+.form {
+}
+
+.form__label {
+  font-size: var(--font-size-main);
+  font-weight: var(--font-bold);
+  line-height: 18px;
+}
+
+.form__input {
+  font: inherit;
+}
+
+.form__input::placeholder {
+  color: #444444;
+  filter: opacity(50%);
+}
+
+.form__input:focus::placeholder {
+  filter: opacity(100%);
+}
+
+.form__input:invalid {
+  color: #e74246;
+  border: 2px solid #e74246;
+}
+
+.form__input--textarea {
+  resize: none;
+}

@@ -1,0 +1,85 @@
+.filter {
+}
+
+.filter__fieldset {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  border: none;
+}
+
+.filter__legend {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter__legend--value {
+  margin-bottom: 45px;
+}
+
+.filter__range {
+  margin-bottom: 15px;
+}
+
+.filter__range-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__range-label {
+  display: flex;
+  align-items: center;
+  width: 115px;
+
+  font-size: var(--font-size-main);
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter__range-input {
+  width: 100%;
+  margin-left: 10px;
+  padding: 12px 10px 13px;
+  border: none;
+  box-sizing: border-box;
+
+  color: #283136;
+  font: inherit;
+  line-height: 22px;
+  text-align: center;
+
+  border-radius: var(--standard-radius);
+  background-color: var(--color-background);
+}
+
+.filter__label {
+  display: block;
+
+  color: #283136;
+  font-size: var(--font-size-main);
+  line-height: 20px;
+
+  cursor: pointer;
+
+  transition-property: color, filter;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.filter__label:hover,
+.filter__label:focus {
+  color: var(--color-text);
+}
+
+.filter__input:disabled + .filter__label {
+  filter: opacity(30%);
+}
+
+.filter__button {
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+.modal {
+  width: 960px;
+  padding: 70px 100px 80px;
+}
+
+.modal__title {
+  font-size: 45px;
+  font-weight: var(--font-medium);
+  line-height: 45px;
+}
+
+.modal__form {
+}

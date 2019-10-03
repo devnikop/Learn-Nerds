@@ -1,0 +1,82 @@
+.button {
+  display: inline-block;
+  padding: 19px 40px 18px;
+
+  font-size: var(--font-size-main);
+  line-height: 18px;
+  font-weight: var(--font-medium);
+  color: var(--color-text-white);
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  border: none;
+  border-radius: var(--standard-radius);
+  background-color: #fb565a;
+
+  cursor: pointer;
+
+  transition-property: color, box-shadow, background-color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.button--long {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgb(255 255 255 / 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.button--green {
+  background-color: #00ca74;
+}
+
+.button--green:hover,
+.button--green:focus {
+  background-color: #00bc6c;
+}
+
+.button--green:active {
+  background-color: #00aa62;
+}
+
+.button--yellow {
+  background-color: #efc84a;
+}
+
+.button--yellow:hover,
+.button--yellow:focus {
+  background-color: #eab534;
+}
+
+.button--yellow:active {
+  background-color: #e5a722;
+}
+
+.button--grey {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.button--grey:hover,
+.button--grey:focus {
+  background-color: #dfdfdf;
+}
+
+.button--grey:active {
+  color: rgb(0 0 0 / 0.3);
+  background-color: #d5d5d5;
+}
+
+.button--buy:active {
+  color: var(--color-text-white);
+}

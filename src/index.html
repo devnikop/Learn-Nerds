@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>Nerds</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./components/base/style.css" />
   </head>
 
-  <body>
-    <header class="header">
+  <body class="body">
+    <header class="body__header header">
       <div class="header__wrapper">
         <a>
           <img
             class="header__logo"
-            src="../img/nerds-logo.svg"
+            src="./components/base/img/nerds-logo.svg"
             alt="Main logotype"
           />
         </a>
@@ -37,9 +37,9 @@
         </nav>
       </div>
     </header>
-    <main class="main">
+    <main class="body__main main">
       <h1 class="visually-hidden">Студия разработки Nerds</h1>
-      <section class="slider">
+      <section class="main__slider slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider__list">
           <li class="slider__item slider__item--first slider__item--current">
@@ -52,7 +52,7 @@
                 Математически выверенный дизайн<br />
                 для вашего сайта или мобильного приложения.
               </p>
-              <a class="slider__link button-like button-like--long" href=""
+              <a class="slider__link button button--long" href=""
                 >Узнать больше</a
               >
             </div>
@@ -67,7 +67,7 @@
                 Никакого креатива, только математические формулы<br />
                 для расчета идеальных пропорций.
               </p>
-              <a class="slider__link button-like button-like--long" href=""
+              <a class="slider__link button button--long" href=""
                 >Узнать больше</a
               >
             </div>
@@ -82,7 +82,7 @@
                 Работать днем, как все? Мы против этого.<br />
                 Ближе к полуночи работа только начинается.
               </p>
-              <a class="slider__link button-like button-like--long" href=""
+              <a class="slider__link button button--long" href=""
                 >Узнать больше</a
               >
             </div>
@@ -106,7 +106,7 @@
           </li>
         </ul>
       </section>
-      <section class="features">
+      <section class="main__features features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features__list">
           <li class="features__item features__item--web-sites">
@@ -114,29 +114,25 @@
             <p class="features__text">
               Мир никогда не будет прежним после того как увидит ваш сайт!
             </p>
-            <a class="features__link button-like" href="">Заказать</a>
+            <a class="features__link button" href="">Заказать</a>
           </li>
           <li class="features__item features__item--apps">
             <h3 class="features__title">Приложения</h3>
             <p class="features__text">
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
-            <a class="features__link button-like button-like--green" href=""
-              >Заказать</a
-            >
+            <a class="features__link button button--green" href="">Заказать</a>
           </li>
           <li class="features__item features__item--presentation">
             <h3 class="features__title">Презентации</h3>
             <p class="features__text">
               Вы даже не подозреваете, насколько вы изумительны!
             </p>
-            <a class="features__link button-like button-like--yellow" href=""
-              >Заказать</a
-            >
+            <a class="features__link button button--yellow" href="">Заказать</a>
           </li>
         </ul>
       </section>
-      <div class="info">
+      <div class="main__info info">
         <div class="info__left">
           <b class="info__slogan"
             >Мы — маленькая, но гордая дизайн-студия из Краснодара.</b
@@ -157,7 +153,7 @@
         <div class="info__right">
           <img
             class="info__logo"
-            src="../img/nerds-illustration.png"
+            src="./components/base/img/nerds-illustration.png"
             alt="Logotype"
           />
           <b class="info__table-title">с 2004 года Любим точность во всем:</b>
@@ -194,32 +190,44 @@
         <ul class="projects__list">
           <li class="projects__item">
             <a class="projects__link" href="">
-              <img class="" src="../img/logo-1.png.png" alt="Html academy" />
+              <img
+                class=""
+                src="./components/base/img/logo-1.png.png"
+                alt="Html academy"
+              />
             </a>
           </li>
           <li class="projects__item">
             <a class="projects__link" href="">
               <img
                 class=""
-                src="../img/logo-2.png.png"
+                src="./components/base/img/logo-2.png.png"
                 alt="Barbershop borodinski"
               />
             </a>
           </li>
           <li class="projects__item">
             <a class="projects__link" href="">
-              <img class="" src="../img/logo-3.png.png" alt="Pink" />
+              <img
+                class=""
+                src="./components/base/img/logo-3.png.png"
+                alt="Pink"
+              />
             </a>
           </li>
           <li class="projects__item">
             <a class="projects__link" href="">
-              <img class="" src="../img/logo-4.png.png" alt="Mishka" />
+              <img
+                class=""
+                src="./components/base/img/logo-4.png.png"
+                alt="Mishka"
+              />
             </a>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="body__footer footer">
       <div class="footer__map map">
         <div class="map__wrapper-center">
           <div class="map__wrapper">
@@ -234,7 +242,7 @@
                 >+7 (812) 275-75-75</a
               >
             </p>
-            <a class="button-like" href="">Напишите нам</a>
+            <a class="button" href="">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -295,7 +303,7 @@
             placeholder="В свободной форме"
           ></textarea>
         </label>
-        <button class="form__submit button-like" type="submit">
+        <button class="form__submit button" type="submit">
           Отправить
         </button>
       </form>

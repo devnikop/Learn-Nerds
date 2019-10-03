@@ -1,0 +1,37 @@
+@import "./normalize.css";
+@import "./base.css";
+
+/* header */
+@import "../button/button.css";
+@import "../navigation/navigation.css";
+/* insert new components for 'header' right before this comment */
+@import "../header/header.css";
+
+/* main */
+@import "../slider/slider.css";
+@import "../controls/controls.css";
+@import "../features/features.css";
+@import "../info/info.css";
+@import "../table/table.css";
+@import "../projects/projects.css";
+@import "../range/range.css";
+@import "../filter/filter.css";
+@import "../sort/sort.css";
+@import "../template/template.css";
+@import "../templates/templates.css";
+@import "../pagination/pagination.css";
+/* insert new components for 'main' right before this comment */
+@import "../main/main.css";
+
+/* footer */
+@import "../map/map.css";
+@import "../socials/socials.css";
+/* insert new components for 'footer' right before this comment */
+@import "../footer/footer.css";
+
+/* modals */
+@import "../form/form.css";
+@import "../modal/modal.css";
+
+/* root layout */
+@import "../body/body.css";

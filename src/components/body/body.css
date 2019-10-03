@@ -1,0 +1,20 @@
+.body {
+}
+
+.body__header {
+  padding-top: 50px;
+}
+
+.body__header--shop-page {
+  padding-bottom: 80px;
+}
+
+.body__main {
+}
+
+.body__main--shop-page {
+}
+
+.body__footer {
+  margin-top: 80px;
+}

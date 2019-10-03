@@ -1,0 +1,37 @@
+.projects {
+  width: var(--desktop);
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.projects__link {
+  display: block;
+  width: 260px;
+
+  filter: opacity(20%);
+  cursor: pointer;
+
+  transition-property: filter;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.projects__link:hover,
+.projects__link:focus {
+  filter: opacity(100%);
+}
+
+.projects__link:active {
+  filter: opacity(10%);
+}

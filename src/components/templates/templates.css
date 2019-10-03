@@ -1,0 +1,18 @@
+.templates {
+}
+
+.templates__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: -32px;
+  margin-left: -40px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.templates__item {
+  margin-top: 32px;
+  margin-left: 40px;
+}

@@ -1,0 +1,38 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  width: 90px;
+
+  list-style: none;
+}
+
+.controls__item {
+}
+
+.controls__button {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  background-color: var(--color-background-white);
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.controls__button--current::before {
+  display: block;
+  margin: 0 auto;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+
+  content: "";
+}
