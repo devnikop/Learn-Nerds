@@ -10,15 +10,14 @@
 }
 
 .main__info {
-  margin-bottom: 45px;
 }
 
 .main--shop-page {
 }
 
 .main__title-wrapper {
-  margin-bottom: 60px;
-  padding-bottom: 110px;
+  margin-bottom: 55px;
+  padding-bottom: 105px;
 
   background-color: var(--color-background);
 }
@@ -46,7 +45,7 @@
 }
 
 .main__sort {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .main__templates {

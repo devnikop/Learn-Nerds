@@ -51,7 +51,7 @@
 
 .features__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 
   font-size: 24px;
   line-height: 30px;
@@ -62,7 +62,7 @@
 .features__text {
   width: 260px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .features__link {

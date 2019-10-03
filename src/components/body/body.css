@@ -2,11 +2,11 @@
 }
 
 .body__header {
-  padding-top: 50px;
+  padding-top: 36px;
 }
 
 .body__header--shop-page {
-  padding-bottom: 80px;
+  padding-bottom: 75px;
 }
 
 .body__main {
@@ -16,5 +16,9 @@
 }
 
 .body__footer {
-  margin-top: 80px;
+  margin-top: 75px;
+}
+
+.body__footer--shop-page {
+  margin-top: 60px;
 }

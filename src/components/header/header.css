@@ -6,7 +6,6 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: var(--desktop);
   margin: 0 auto;
 }
@@ -28,4 +27,5 @@
 
 .header__navigation {
   width: 800px;
+  margin-top: 28px;
 }

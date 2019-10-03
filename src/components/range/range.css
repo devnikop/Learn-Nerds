@@ -1,5 +1,5 @@
 .range {
-  padding: 30px 20px 29px;
+  padding: 38px 20px;
 
   border-radius: var(--standard-radius);
   background-color: var(--color-background);
@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
 
-  width: 75%;
+  width: 65%;
   height: 100%;
 
   background-color: #00ca74;
@@ -61,5 +61,5 @@
 }
 
 .range__button--right {
-  left: 75%;
+  left: 65%;
 }

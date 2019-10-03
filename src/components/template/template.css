@@ -44,7 +44,7 @@
   bottom: 0;
   left: 0;
 
-  padding: 30px 60px 40px;
+  padding: 30px 60px 44px;
 
   text-align: center;
   filter: opacity(0);
@@ -62,7 +62,7 @@
 
 .template__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-size: 18px;
   font-weight: var(--font-bold);
@@ -71,9 +71,16 @@
 }
 
 .template__text {
+  margin: 0 auto;
+  margin-bottom: 28px;
+
   color: #666666;
   font-size: var(--font-size-main);
   line-height: 18px;
+}
+
+.template__text--narrow {
+  width: 80%;
 }
 
 .template__button {

@@ -1,7 +1,6 @@
 .projects {
   width: var(--desktop);
   margin: 0 auto;
-  padding-bottom: 40px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -9,10 +8,34 @@
 .projects__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.projects__item {
+  position: relative;
+}
+
+.projects__item::after {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+
+  width: 2px;
+  height: 50px;
+
+  transform: translate(0, -50%);
+
+  background-color: var(--color-background);
+
+  content: "";
+}
+
+.projects__item:last-of-type::after {
+  content: none;
 }
 
 .projects__link {

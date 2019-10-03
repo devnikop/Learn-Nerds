@@ -3,19 +3,19 @@
   justify-content: space-between;
   width: var(--desktop);
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 44px;
 
   border-bottom: 2px solid #eeeeee;
 }
 
 .info__left {
   width: 700px;
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 .info__slogan {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   font-size: 45px;
   line-height: 45px;
@@ -23,6 +23,7 @@
 }
 
 .info__text {
+  width: 90%;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -67,12 +68,12 @@
 .info__logo {
   width: 360px;
   height: 208px;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .info__table-title {
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 
   font-weight: var(--font-bold);
   text-transform: uppercase;

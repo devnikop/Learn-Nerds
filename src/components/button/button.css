@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding: 19px 40px 18px;
+  padding: 17px 40px 16px;
 
   font-size: var(--font-size-main);
   line-height: 18px;
@@ -22,7 +22,7 @@
 
 .button--long {
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 55px;
 }
 
 .button:hover,

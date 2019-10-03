@@ -1,8 +1,6 @@
 .slider {
   position: relative;
 
-  padding-top: 20px;
-
   color: var(--color-text);
   background-color: var(--color-background);
 }
@@ -11,7 +9,7 @@
   position: relative;
 
   width: var(--desktop);
-  min-height: 453px;
+  min-height: 425px;
   margin: 0 auto;
   padding: 0;
 
@@ -24,10 +22,10 @@
   left: 0;
 
   width: 100%;
-  padding: 80px 0 80px;
+  padding: 70px 0 80px;
 
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 32px top 12px;
 
   display: none;
 }
@@ -57,11 +55,15 @@
 }
 
 .slider__slogan {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   font-size: 55px;
   line-height: 55px;
   font-weight: var(--font-medium);
+}
+
+.slider__slogan--narrow {
+  width: 80%;
 }
 
 .slider__text {
@@ -71,12 +73,12 @@
 }
 
 .slider__link {
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 .slider__controls-list {
   position: absolute;
-  bottom: 80px;
+  bottom: 90px;
   left: 50%;
 
   transform: translate(-50%);
