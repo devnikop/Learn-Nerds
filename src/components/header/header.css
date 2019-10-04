@@ -12,8 +12,8 @@
 
 .header__logo {
   transition-property: filter;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
 }
 
 .header__logo:hover,

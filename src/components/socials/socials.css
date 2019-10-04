@@ -27,8 +27,8 @@
   cursor: pointer;
 
   transition-property: background-color, box-shadow;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
 }
 
 .socials__link::before {
@@ -41,8 +41,8 @@
   content: "";
 
   transition-property: filter;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
 }
 
 .socials__link--vk::before {

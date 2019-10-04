@@ -16,8 +16,8 @@
   cursor: pointer;
 
   transition-property: color, box-shadow, background-color;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
 }
 
 .button--long {

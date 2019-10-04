@@ -40,6 +40,9 @@
   --line-height-main: 24px;
 
   --font-family-main: "Roboto", "Arial", "sans-serif";
+
+  --transition-time: 200ms;
+  --transition-function: linear;
 }
 
 .visually-hidden {
