@@ -20,6 +20,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 
   width: 100%;
   padding: 70px 0 80px;
@@ -27,11 +28,13 @@
   background-repeat: no-repeat;
   background-position: right 32px top 12px;
 
-  display: none;
+  filter: opacity(0);
 }
 
 .slider__item--current {
-  display: block;
+  z-index: 0;
+
+  filter: opacity(100%);
 }
 
 .slider__item--first {
