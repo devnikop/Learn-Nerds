@@ -264,45 +264,49 @@
       </div>
     </footer>
     <section class="modal modal--feedback">
-      <h2 class="modal__title">Напишите нам</h2>
-      <form
-        class="modal__form form"
-        method="POST"
-        action="https://echo.htmlacademy.ru"
-      >
-        <label class="form__label">
-          Ваше имя:
-          <input
-            class="form__input"
-            type="text"
-            name="name"
-            placeholder="Имя Фамилия"
-          />
-        </label>
-        <label class="form__label">
-          Ваше email:
-          <input
-            class="form__input"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-          />
-        </label>
-        <label class="form__label">
-          Текст письма:
-          <textarea
-            class="form__input form__input--textarea"
-            name="description"
-            placeholder="В свободной форме"
-          ></textarea>
-        </label>
-        <button class="form__submit button" type="submit">
-          Отправить
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Напишите нам</h2>
+        <form
+          class="modal__form form"
+          method="POST"
+          action="https://echo.htmlacademy.ru"
+        >
+          <div class="form__columns">
+            <label class="form__label">
+              Ваше имя:
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                placeholder="Имя Фамилия"
+              />
+            </label>
+            <label class="form__label">
+              Ваше email:
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+              />
+            </label>
+          </div>
+          <label class="form__label form__label--textarea">
+            Текст письма:
+            <textarea
+              class="form__input form__input--textarea"
+              name="description"
+              placeholder="В свободной форме"
+            ></textarea>
+          </label>
+          <button class="form__submit button" type="submit">
+            Отправить
+          </button>
+        </form>
+        <button class="modal__close" type="button">
+          <span class="visually-hidden">Закрыть окно</span>
         </button>
-      </form>
-      <button type="button">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
+      </div>
     </section>
   </body>
 </html>
