@@ -49,7 +49,7 @@
             method="POST"
             action="https://echo.htmlacademy.ru"
           >
-            <fieldset class="filter__fieldset">
+            <fieldset class="filter__fieldset filter__fieldset--value">
               <legend class="filter__legend filter__legend--value">
                 Стоимость:
               </legend>
@@ -87,7 +87,7 @@
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Сетка:</legend>
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="radio-adaptive"
                 type="radio"
                 name="grid"
@@ -99,16 +99,16 @@
                 >Адаптивная</label
               >
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="radio-fix"
                 type="radio"
                 name="grid"
               />
-              <label class="filter__label filter__label-radio" for="radio-fix"
+              <label class="filter__label filter__label--radio" for="radio-fix"
                 >Фиксированная</label
               >
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="radio-rubber"
                 type="radio"
                 name="grid"
@@ -122,50 +122,60 @@
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Особенности:</legend>
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="features-slider-id"
                 type="checkbox"
                 name="features-slider"
                 checked
               />
-              <label class="filter__label" for="features-slider-id"
+              <label
+                class="filter__label filter__label--checkbox"
+                for="features-slider-id"
                 >Слайдер</label
               >
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="features-benefits-id"
                 type="checkbox"
                 name="features-benefits"
               />
-              <label class="filter__label" for="features-benefits-id"
+              <label
+                class="filter__label filter__label--checkbox"
+                for="features-benefits-id"
                 >Блок преимуществ</label
               >
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="features-news-id"
                 type="checkbox"
                 name="features-news"
                 checked
               />
-              <label class="filter__label" for="features-news-id"
+              <label
+                class="filter__label filter__label--checkbox"
+                for="features-news-id"
                 >Новости</label
               >
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="features-gallery-id"
                 type="checkbox"
                 name="features-gallery"
               />
-              <label class="filter__label" for="features-gallery-id"
+              <label
+                class="filter__label filter__label--checkbox"
+                for="features-gallery-id"
                 >Галерея</label
               >
               <input
-                class="filter__input"
+                class="filter__input visually-hidden"
                 id="features-basket-id"
                 type="checkbox"
                 name="features-basket"
               />
-              <label class="filter__label" for="features-basket-id"
+              <label
+                class="filter__label filter__label--checkbox"
+                for="features-basket-id"
                 >Корзина</label
               >
             </fieldset>
