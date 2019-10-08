@@ -46,9 +46,13 @@ const modalOpen = openButton => {
       modalInputTextareaElement.value = storage.storage_text;
     }
 
-    const modalFeedbackCloseCallback = () => {
+    const modalFeedbackClose = () => {
       modalFeedbackElement.classList.remove("modal--open");
       modalFeedbackElement.classList.remove("modal--error");
+    };
+
+    const modalFeedbackCloseCallback = () => {
+      modalFeedbackClose();
     };
 
     modalFeedbackCloseElement.addEventListener(
@@ -60,8 +64,7 @@ const modalOpen = openButton => {
       if (evt.key === "Escape") {
         evt.preventDefault();
         if (modalFeedbackElement.classList.contains("modal--open")) {
-          modalFeedbackElement.classList.remove("modal--open");
-          modalFeedbackElement.classList.remove("modal--error");
+          modalFeedbackClose();
         }
       }
     };
