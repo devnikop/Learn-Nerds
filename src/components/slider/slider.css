@@ -29,6 +29,10 @@
   background-position: right 32px top 12px;
 
   filter: opacity(0);
+
+  transition-property: filter;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
 }
 
 .slider__item--current {
@@ -37,15 +41,15 @@
   filter: opacity(100%);
 }
 
-.slider__item--first {
+.slider__item:nth-child(1) {
   background-image: url("./assets/slide1.png");
 }
 
-.slider__item--second {
+.slider__item:nth-child(2) {
   background-image: url("./assets/slide2.png");
 }
 
-.slider__item--third {
+.slider__item:nth-child(3) {
   background-image: url("./assets/slide3.png");
 }
 

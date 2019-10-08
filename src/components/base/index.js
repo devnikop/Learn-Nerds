@@ -91,5 +91,57 @@ const modalOpen = openButton => {
   });
 };
 
+const sliderInitialize = () => {
+  const sliderSectionElement = document.querySelector(".slider");
+  const sliderItemElements = sliderSectionElement.querySelectorAll(
+    ".slider__item"
+  );
+
+  const sliderControlsListElement = sliderSectionElement.querySelector(
+    ".controls"
+  );
+  const sliderControlButtonElements = sliderControlsListElement.querySelectorAll(
+    ".controls__button"
+  );
+
+  sliderControlsListElement.addEventListener("click", evt => {
+    const isButton = element => element.classList.contains("controls__button");
+    const isCurrentButton = element =>
+      element.classList.contains("controls__button--current");
+
+    const hideAllSlides = elements => {
+      elements.forEach(item => {
+        item.classList.remove("slider__item--current");
+      });
+    };
+    const resetControlButtonsStates = elements => {
+      elements.forEach(item => {
+        item.classList.remove("controls__button--current");
+      });
+    };
+    const showCurrentSlider = element => {
+      element.classList.add("slider__item--current");
+    };
+    const setCurrentControlButtonState = element => {
+      element.classList.add("controls__button--current");
+    };
+
+    const currentElement = evt.target;
+    if (isButton(currentElement) && !isCurrentButton(currentElement)) {
+      sliderControlButtonElements.forEach((item, i) => {
+        if (currentElement === item) {
+          hideAllSlides(sliderItemElements);
+          showCurrentSlider(sliderItemElements[i]);
+
+          resetControlButtonsStates(sliderControlButtonElements);
+          setCurrentControlButtonState(sliderControlButtonElements[i]);
+        }
+      });
+    }
+  });
+};
+
 const writeUsElement = document.querySelector(".write-us-js");
 modalOpen(writeUsElement);
+
+sliderInitialize();
