@@ -351,8 +351,16 @@
         </section>
       </div>
     </main>
-    <footer class="body__footer body__footer--shop-page footer">
+    <footer class="body__footer footer">
       <div class="footer__map map">
+        <iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716252715!3d59.938719169053975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1570534023367!5m2!1sen!2sru"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen=""
+        ></iframe>
         <div class="map__wrapper-center">
           <div class="map__wrapper">
             <p class="map__title">NЁRDS DESIGN STUDIO</p>
@@ -366,7 +374,7 @@
                 >+7 (812) 275-75-75</a
               >
             </p>
-            <a class="button" href="">Напишите нам</a>
+            <a class="button write-us-js" href="">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -395,45 +403,52 @@
       </div>
     </footer>
     <section class="modal modal--feedback">
-      <h2 class="modal__title">Напишите нам</h2>
-      <form
-        class="modal__form form"
-        method="POST"
-        action="https://echo.htmlacademy.ru"
-      >
-        <label class="form__label">
-          Ваше имя:
-          <input
-            class="form__input"
-            type="text"
-            name="name"
-            placeholder="Имя Фамилия"
-          />
-        </label>
-        <label class="form__label">
-          Ваше email:
-          <input
-            class="form__input"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-          />
-        </label>
-        <label class="form__label">
-          Текст письма:
-          <textarea
-            class="form__input form__input--textarea"
-            name="description"
-            placeholder="В свободной форме"
-          ></textarea>
-        </label>
-        <button class="form__submit button" type="submit">
-          Отправить
-        </button>
-      </form>
-      <button type="button">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
+      <div class="modal__wrapper-feedback">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Напишите нам</h2>
+          <form
+            class="modal__form form"
+            method="POST"
+            action="https://echo.htmlacademy.ru"
+          >
+            <div class="form__columns">
+              <label class="form__label">
+                Ваше имя:
+                <input
+                  class="form__input form__input--name"
+                  type="text"
+                  name="name"
+                  placeholder="Имя Фамилия"
+                />
+              </label>
+              <label class="form__label">
+                Ваше email:
+                <input
+                  class="form__input form__input--email"
+                  type="email"
+                  name="email"
+                  placeholder="email@example.com"
+                />
+              </label>
+            </div>
+            <label class="form__label form__label--textarea">
+              Текст письма:
+              <textarea
+                class="form__input form__input--textarea"
+                name="description"
+                placeholder="В свободной форме"
+              ></textarea>
+            </label>
+            <button class="form__submit button" type="submit">
+              Отправить
+            </button>
+          </form>
+          <button class="modal__close" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </div>
+      </div>
     </section>
+    <script src="components/base/index.js"></script>
   </body>
 </html>
